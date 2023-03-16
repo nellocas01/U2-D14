@@ -6,6 +6,20 @@ const PARAM = {
     }
 }
 
+window.onload = ()=>{
+    const btn = document.getElementById('load');
+    btn.onclick = () => {
+        fetch(API_KEY, PARAM)
+        .then(r => {
+            r.json()
+            lo
+        })
+        .then(obj =>{
+            console.log(obj);
+        })
+    }
+}
+
   const resp = async(url, params)=> {
     try{
         const response = await fetch(url, params)
